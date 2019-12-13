@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Lilita+One&display=swap');
+
+.buttonHeader{
+    border: none;
+    font-size: 35px;
+    width: 25%;
+    font-family: 'Lilita One', cursive;
+    color: honeydew;
+    background: #00008b;
+}
+
+.buttonHeader:hover{
+    cursor: pointer;
+    color: #00008b;
+    background: honeydew;
+}

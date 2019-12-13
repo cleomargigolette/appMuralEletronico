@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Lilita+One&display=swap');
+
+.containerPrincipal{
+    display: flex;
+    flex-direction: column;
+    background:#cdc4c9 url('../../img/download\ \(1\).jpeg') no-repeat center ;
+    background-size: 100%;
+    height:669px;
+
+}

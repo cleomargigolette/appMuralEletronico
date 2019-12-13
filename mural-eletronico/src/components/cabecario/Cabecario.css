@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Lilita+One&display=swap');
+
+.cabecario{
+    position: fixed top;
+    height:10%;
+    background: #cdcdcd;
+    font-size: 50px;
+    text-align: center;
+    color: #00008b;
+    font-family: 'Lilita One', cursive;
+}
