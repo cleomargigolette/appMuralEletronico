@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Home } from './pages/home/Home.js';
 import { Cadastro } from '../src/pages/cadastro/Cadastro.js';
+import { Home } from './pages/home/Home.js';
+
 
 class App extends Component {
   render() {

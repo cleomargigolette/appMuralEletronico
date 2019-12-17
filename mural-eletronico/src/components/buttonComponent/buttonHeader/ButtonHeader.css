@@ -4,6 +4,7 @@
     border: none;
     font-size: 35px;
     width: 25%;
+    height: 70px;
     font-family: 'Lilita One', cursive;
     color: honeydew;
     background: #00008b;
@@ -13,4 +14,6 @@
     cursor: pointer;
     color: #00008b;
     background: honeydew;
+    font-size: 37px;
+    border: solid 0.3px;
 }

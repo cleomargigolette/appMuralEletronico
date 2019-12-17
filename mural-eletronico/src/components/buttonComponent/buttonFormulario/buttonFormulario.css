@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Lilita+One&display=swap');
+
+.buttonFormulario{
+    margin-top: 2%;
+    border: none;
+    font-size: 30px;
+    width: 50%;
+    font-family: 'Lilita One', cursive;
+    color: honeydew;
+    background: #00008b;
+    box-shadow: 5px 5px 0 #333;
+   -webkit-box-shadow: 5px 5px 0 #333;
+   -moz-box-shadow: 5px 5px 0 #333;
+}
+
+.buttonFormulario:hover{
+    cursor: pointer;
+    color: #00008b;
+    background: honeydew;
+    border: solid 0.6px;
+}

@@ -3,6 +3,6 @@ import './Cabecario.css'
 
 export class Cabecario extends Component{
     render(){
-        return <div className='cabecario'>Painel Eletronico</div>
+        return <div className='cabecario'>{this.props.name}</div>
     }
 } 
