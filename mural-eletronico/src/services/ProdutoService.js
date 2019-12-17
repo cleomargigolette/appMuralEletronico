@@ -3,10 +3,13 @@ import BaseService from './BaseService.js';
 
 export default class PodutoService extends BaseService {
 
-    cadastrarProduto(name, valor) {
+    cadastrarProduto(name, valor, setor, categoria) {
         const dados = {
             name: name,
-            valor: valor
+            valor: valor,
+            setor:setor,
+            categoria:categoria
+
         }
 
         return axios.post(`${this.baseUrl}`, dados)
@@ -14,6 +17,6 @@ export default class PodutoService extends BaseService {
     }
 
     listarProdutos() {
-        return axios.get(`${this.baseUrl}painel`)
+        return axios.get(`${this.baseUrl}`)
     }
 }

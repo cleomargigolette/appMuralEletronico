@@ -4,7 +4,8 @@ import { Header } from '../../components/headerComponent/Header.js';
 import { Cabecario } from '../../components/cabecario/Cabecario.js';
 import { ButtonFormulario } from "../../components/buttonComponent/buttonFormulario/ButtonFormulario.js"
 import { InputFormulario } from '../../components/inputsComponents/InputFormulario.js';
-import ProdutoService from '../../services/ProdutoService.js'
+import ProdutoService from '../../services/ProdutoService.js';
+import swal from 'sweetalert'
 
 export class Cadastro extends Component{
 
@@ -12,7 +13,9 @@ export class Cadastro extends Component{
         super();
         this.state = {
             name: "",
-            valor:''
+            valor:'',
+            setor:"",
+            categoria:''
         }
         
     }
@@ -31,17 +34,17 @@ export class Cadastro extends Component{
 
     onSubmit = (event) => {
         event.preventDefault()
-        this.produtoService.cadastrarProduto(this.state.name,this.state.valor)
+        this.produtoService.cadastrarProduto(this.state.name,this.state.valor,this.state.setor,
+            this.state.categoria)
             .then((response) => {
                 this.setState({ id: response.data.id })
-                alert('Produto cadastro com sucesso!')
+                swal('Sucesso','Seu produto foi cadastrado com sucesso','success')
             }).catch(err => {
-                console.log("ESTOU AQUI");
-                alert('Algo não saiu como esperado tente de novo!')
+                swal('Atenção','Algo não saiu como esperado tente de novo!','error')
             })
 
     }
-    
+
     render(){
         return <div className="cadastro">
            <Cabecario name="Cadatro de Produtos"/>
@@ -52,14 +55,14 @@ export class Cadastro extends Component{
                <label className='labelCadastro'>Valor Produto:</label>
                <InputFormulario name="valor" tipo={'number'} value={this.state.valor} onChange={this.handleChange}/> 
                <label className='labelCadastro'>Categoria Produto:</label>
-               <select >
+               <select name="categoria" value={this.state.categoria} onChange={this.handleChange}>
                    <option value=" "> </option>
                     <option value="bovino" >BOVINO</option>
                     <option value="suino" >SUÍNO</option>
                     <option value="ave" >AVE</option>
                 </select>
                <label className='labelCadastro'>Setor Produto:</label>
-               <select>
+               <select name="setor" value={this.state.setor} onChange={this.handleChange}>
                    <option value=" "></option>
                     <option value="acougue" >AÇOUGUE</option>
                     <option value="padaria" >PADARIA</option>
