@@ -1,20 +1,14 @@
 import React, {Component } from 'react';
 import './Header.css';
-import {ButtonHeader} from '../buttonComponent/buttonHeader/buttonHeaderComponent.js'
+import {ButtonHeader} from '../buttonComponent/buttonHeader/buttonHeaderComponent.js';
 
 export class Header extends Component{
 
-
-    onclick(){
-        
-    }
-
     render(){
         return <div className='header'>
-            <ButtonHeader name="Cadastrar Produto"/>
-            <ButtonHeader name="Editar Produto"/>
-            <ButtonHeader name="Deletar Produto"/>
-            <ButtonHeader name="Listar Produtos" />
+            <ButtonHeader name="Cadastrar" route='/cadastro'/>
+            <ButtonHeader name="Deletar e Editar" route='/deletar'/>
+            <ButtonHeader name="Listar" route='/listar'/>
         </div>
     }
 }

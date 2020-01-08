@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Lilita+One&display=swap');
+
+.deletar{
+    display: flex;
+    flex-direction: column;
+}
+
+.lista{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    background-color: #cdcdcd;
+    align-items: center;
+}
+
+.lista li{
+    width: 30%;
+    font-family: 'Lilita One', cursive;
+    font-size: 30px;
+    color: rgb(54, 54, 66);
+}
+
+.buttonDeletar{
+    background-color: honeydew;
+    color: red;
+    font-family: 'Lilita One', cursive;
+    font-size: 30px;
+    border-radius: 10%;
+    margin: 0.4%;
+}
+
+.buttonDeletar:hover{
+    color: honeydew;;
+    background: red;
+    padding:solid 0.5px;
+    cursor: pointer;
+}
+
+.buttonEditar{
+    background: #00008b;
+    color: honeydew;
+    font-family: 'Lilita One', cursive;
+    font-size: 30px;
+    border-radius: 10%;
+    margin: 0.4%;
+}
+
+.buttonEditar:hover{
+    color: #00008b;
+    background: honeydew;
+    padding:solid 0.3px;
+    cursor: pointer;
+}
+
+.buttonPromocao{
+    background: green;
+    color: honeydew;
+    font-family: 'Lilita One', cursive;
+    font-size: 30px;
+    border-radius: 10%;
+    margin: 0.4%;
+}
+
+.buttonPromocao:hover{
+    color: honeydew;
+    background:green ;
+    padding:solid 0.3px;
+    cursor: pointer;
+}

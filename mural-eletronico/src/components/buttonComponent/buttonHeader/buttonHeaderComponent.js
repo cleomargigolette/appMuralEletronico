@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import './ButtonHeader.css'
+import { Link } from 'react-router-dom';
+import './ButtonHeader.css';
 
 export class ButtonHeader extends Component {
 
     render(){
-    return <button className='buttonHeader' type="button" onClick={this.props.onClick} >{this.props.name}</button>
+    return <button className='buttonHeader'><Link to={this.props.route} >{this.props.name}</Link></button>
     }
 }

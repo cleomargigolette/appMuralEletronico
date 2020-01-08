@@ -6,17 +6,17 @@
 }
 
 .formCadastro{
+    color: rgb(54, 54, 66);
     background: white;
-    opacity: 80%;
     box-shadow: 5px 5px 0 #333;
    -webkit-box-shadow: 5px 5px 0 #333;
    -moz-box-shadow: 5px 5px 0 #333;
     position: fixed;
-    top: 30%;
+    top: 25%;
     right: 25%;
     border: solid 1px;
     border-radius: 2%;
-    width: 50%;
+    width: 45%;
     display: flex;
     flex-direction: column;
 }

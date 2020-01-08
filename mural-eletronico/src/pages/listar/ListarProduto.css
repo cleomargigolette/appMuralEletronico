@@ -1,0 +1,15 @@
+.listar{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    background-color: #cdcdcd;
+    align-items: center;
+}
+
+.listar li{
+    width: 50%;
+    height: 110px;
+    font-family: 'Lilita One', cursive;
+    font-size: 70px;
+    color: rgb(54, 54, 66);
+}
